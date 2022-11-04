@@ -1,0 +1,36 @@
+
+
+.button-close__button {
+position: absolute;
+display: flex;
+align-items: center;
+    
+
+   
+    width: 30px;
+   height: 30px;
+  
+ top:0;
+ right: 0;
+  
+ margin: 8px;
+
+  background:$three-text-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius:50%;
+  cursor: pointer; 
+  
+  
+  transition-property:color ;
+   transition-duration: 250ms;
+   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+   
+   &:hover {
+   color:$accent-color;
+  } 
+  
+  }
+
+  .button-close__icon {
+  fill: currentColor;
+  }

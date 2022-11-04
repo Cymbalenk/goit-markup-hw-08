@@ -1,0 +1,85 @@
+.mobile-conteiner {
+  display: none;  
+
+ 
+&.is-open {
+display: block;
+
+position: fixed;
+top: 0;
+  left: 0;
+  width: 100%;
+height: 796px;
+  padding: 48px 40px;
+
+  z-index: 999;
+ 
+ background-color:$three-text-color;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+ 0px 2px 4px rgba(0, 0, 0, 0.08), 
+ 0px 1px 3px rgba(0, 0, 0, 0.16);   
+
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transform: scale(1);
+}
+
+}
+
+.mobile-conteiner__button {
+position: absolute;
+top:10px;
+right:15px;
+
+
+ border: none;
+background-color:transparent;
+padding:0;
+&:focus,
+&:hover {
+ color: $accent-color;   
+}
+}
+
+.mobile-conteiner__icon {
+    fill: currentColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

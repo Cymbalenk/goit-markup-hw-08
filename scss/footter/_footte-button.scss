@@ -1,0 +1,25 @@
+.form-button {
+
+
+    width: 200px;
+    height: 50px;
+   margin-top: 20px;
+    padding: 0;
+    
+    font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      border: transparent;
+      letter-spacing: 0.06em;
+    
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+      color:$three-text-color;
+      background-color:$accent-color;
+    }
+    .form-button__icon {
+      vertical-align: middle;
+      margin-left: 10px;
+      
+      fill: currentColor;
+    }

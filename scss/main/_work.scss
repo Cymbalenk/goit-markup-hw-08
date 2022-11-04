@@ -1,0 +1,30 @@
+.section-work {
+    padding-top: 0;
+    padding-bottom: 94px; 
+    
+   @media screen and (max-width:767px) {
+      display: none;  
+    }
+
+   
+     }
+     .work img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+     }
+    .work {
+       display:inline-flex;
+       justify-content: center;
+
+ 
+    }
+    .work__item {
+    margin-right: 30px; 
+    
+    &:last-child {
+     margin-right: 0;
+    }
+
+    }
+  

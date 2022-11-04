@@ -1,0 +1,48 @@
+.address{
+    font-style: normal;
+    }
+    .address__item {
+      margin-bottom: 9px;
+      
+      &:last-child {
+      margin-bottom: 0;
+    }
+    
+    }
+    
+     .address__list {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+    color:rgba(225, 225, 225, 0.6) ;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &--white {
+      margin-top: 20px;
+    
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:$three-text-color;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     }
+    
+    &:hover,
+    &:focus {
+       color:$accent-color; 
+    }
+     &--white:hover,
+     &--white:focus {
+    color:$accent-color;
+    }
+     }
+    
+     

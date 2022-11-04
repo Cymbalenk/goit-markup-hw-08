@@ -1,0 +1,32 @@
+.overlay {
+    position: absolute;
+    
+     top: 0;
+     right: 0;
+    
+     width: 100%;
+     height: 100%;
+    
+    background-color:rgba(33, 150, 243, 0.9);
+    
+    transform:translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+    }
+    .overlay__text {
+    display: flex;
+    position: absolute;
+     
+      top: 63px;
+      right: 24px;
+      
+      font-style: normal;
+    font-weight: 400;
+      font-size: 18px;
+      line-height: 1.56;
+      letter-spacing: 0.03em;
+      color:$three-text-color;
+    
+     width: 322px;
+     height:0;
+    }

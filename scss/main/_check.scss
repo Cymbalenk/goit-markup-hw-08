@@ -1,0 +1,70 @@
+
+.check {
+
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+  
+    color:$secondary-text-color;  
+ }
+   .check__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; 
+  
+  &:checked + .check__icon {
+    background-color:$color-accent-hero-but-hover;
+    background-image:url(../../images/icon.svg/icon\ check.svg);
+    background-size: contain;
+    background-origin:border-box ;
+   border-color:$color-accent-hero-but-hover;
+  
+  
+   transition-property:background-color, background-image;
+   transition-duration: 250ms,250ms;
+   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1),cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  }
+
+  .check__label {
+   display: flex;
+   align-items: center;
+
+  
+  margin-top: 20px;
+  
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+  .check__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+   
+  border:2px solid $primary-text-color;
+  
+  border-radius: 4px;
+  margin-right: 7px;
+  
+  transition-property:border ;
+   transition-duration: 250ms;
+   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+  }
+ 
+  .check__list {
+ text-decoration-line:underline;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  vertical-align: middle;
+  color:$accent-color;
+  
+   }

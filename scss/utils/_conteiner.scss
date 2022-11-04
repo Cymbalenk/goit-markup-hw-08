@@ -1,0 +1,12 @@
+.conteiner {
+    margin: 0 auto;
+    padding: 0 15px;
+
+   @media screen and (win-width:480px) {
+    width: 480px;
+   }
+    @media screen  and (win-width:768px) {
+        width: 768px;
+    }
+    
+    }  

@@ -1,0 +1,41 @@
+.nav-grup {
+  
+    display: none;
+    @media screen and (min-width:768px) {
+        display: flex;
+        
+        flex-grow: 1;
+    }
+
+}
+.nav-button {
+        min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+
+        
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media (min-width: 768px) {
+          display: none;
+        }
+
+&:hover,
+&:focus {
+  color:$accent-color;
+}
+
+
+    }

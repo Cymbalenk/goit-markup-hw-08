@@ -1,0 +1,45 @@
+   .product {
+
+    &:hover .overlay {
+    transform: translateY(0);
+  }
+  
+   }
+
+ .product__discript {
+    position:relative;
+    display: flex;
+    overflow: hidden;
+
+    &:hover .overlay {
+  opacity: 1;
+  transition: translateY(0);
+  }
+
+  }
+  .product__meta {
+    padding: 20px 24px 20px 24px;
+    border:1px solid #eeeeee; 
+    }
+   .product__titles {
+ 
+  margin-bottom: 4px;
+  
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+  
+   color:$primary-text-color; 
+   
+   }
+   .product__text {
+  margin-top: 0;
+  
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.06em;
+  
+   color:$secondary-text-color;
+       
+   }

@@ -1,0 +1,45 @@
+.auth-nav {
+  
+    margin-left: auto;
+  
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    color:$secondary-text-color;
+
+   
+}
+.auth-nav__link {
+    display: block; 
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    color:$secondary-text-color;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color:$accent-color;
+        
+        }
+    
+}
+.auth-nav__item {
+     margin-right: 50px;
+
+ &:last-child {
+      margin-right: 0;
+    } 
+} 
+.auth-nav__icon {
+      fill:currentColor;
+      margin-right: 10px;
+     vertical-align: middle;
+}
+    
