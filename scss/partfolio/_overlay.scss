@@ -16,6 +16,10 @@
     .overlay__text {
     display: flex;
     position: absolute;
+ padding-left: 24px;
+ padding-right: 24px;
+
+  
      
       top: 63px;
       right: 24px;
@@ -27,6 +31,5 @@
       letter-spacing: 0.03em;
       color:$three-text-color;
     
-     width: 322px;
-     height:0;
+     
     }

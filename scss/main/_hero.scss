@@ -1,8 +1,6 @@
 
 .hero {
-
 max-width: 1600px;
-    
 margin: 0 auto;
 
   background-image: linear-gradient(to right,
@@ -19,17 +17,12 @@ margin: 0 auto;
   padding-bottom: 118px;
  
   text-align: center;
-  
-}
 
-
+  }
 
 
 @media (min-resolution: 2dppx) {
-    .hero {
-
-      
-         
+    .hero {     
      margin: 0 auto;
      
        background-image: linear-gradient(to right,
@@ -45,35 +38,27 @@ margin: 0 auto;
        padding-top: 118px;
        padding-bottom: 118px;
       
-       text-align: center;
+     
   }
 }
-@media (mi-width:768px) {
+@media screen and (min-width:768px) {
 .hero { 
- margin: 0 auto;
- 
    background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-     url(../../images/Header2x.jpg);
+    url(../../images/Header2x.jpg);
    
    background-repeat: no-repeat;
    background-size:cover ;
    background-position: center;
    background-color:$secondary-fount-color;
-   
-   padding-top: 118px;
-   padding-bottom: 118px;
-  
-   text-align: center;
+   padding: 118px 204px;
 
-@media(min-resolution:2dppx) {
+
+max-width: 768px;
+
+@media screen and (min-resolution:2dppx) {
   .hero {
-
-   
-       
-   margin: 0 auto;
-   
      background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
@@ -83,11 +68,9 @@ margin: 0 auto;
      background-size:cover ;
      background-position: center;
      background-color:$secondary-fount-color;
-     
-     padding-top: 118px;
-     padding-bottom: 118px;
+   padding: 118px 204px;
+
     
-     text-align: center;
 }
 }
 
@@ -96,7 +79,7 @@ margin: 0 auto;
 }
 
 .hero__title {
-max-width: 696px;
+  max-width: 696px;
 margin-top: 0;
 margin-bottom: 40px;
 margin-left: auto;

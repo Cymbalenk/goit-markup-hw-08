@@ -1,18 +1,22 @@
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
+
+    @media screen and (min-width:768px) {
+        display: flex; 
+        flex-wrap: wrap;
+
+        margin-right: -30px;
+
+     }
 }
      
 .card-set__item {
+  position: relative;
 
     margin-bottom: 30px;
-    width: 370px;
+    width: 450px;
     height: 404px;
     
-     position: relative;
-    
     background:$three-text-color;
-    
     border-top: 0;  
     
 &:hover,
@@ -21,9 +25,38 @@
     0px 4px 4px rgba(0, 0, 0, 0.06),
      1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+
+@media screen and (max-width:767px) {
 &:last-child {
     margin-bottom: 0;
+
+}
+
+}
+
+@media screen and (min-width:768px) {
+margin-bottom: 0;
+width: 354px;
+
+
+width: calc((100% - 4 * 30px)/2);
+margin-right: 30px;
+&:first-child {
+    height:400px ;
+ }
+    
+&:nth-child(2n) {
+ margin-right: 0;   
+}
+&:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+ 
+
+}
 }
 
 
-}  
+

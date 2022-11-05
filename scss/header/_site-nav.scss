@@ -1,6 +1,13 @@
 .site-nav {
+
+   
    @media screen and (min-width:768px) {
-        display: flex;
+      display: inline-flex;
+      align-items: center;
+   
+        
+   margin-left: 88px;
+   margin-top: 2px;
    
    }
 

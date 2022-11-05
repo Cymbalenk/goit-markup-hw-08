@@ -1,5 +1,5 @@
 .page-footter {
-  
+ 
 
     padding-top:60px ;
     padding-bottom: 60px;
@@ -7,6 +7,20 @@
     background:$secondary-fount-color;
      }
      .page-footter__grup {
-     
       text-align: center;
+
+      @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        padding-left: 76px;
+        padding-right: 89px;
+
+
+
+      
+       
+      }
     }

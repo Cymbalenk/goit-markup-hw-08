@@ -388,7 +388,10 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .site-nav {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 88px;
+    margin-top: 2px;
   }
 }
 
@@ -437,6 +440,12 @@ body.modal-open {
   padding-bottom: 32px;
   color: #757575;
 }
+@media screen and (min-width: 768px) {
+  .auth-nav {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
 
 .auth-nav__link {
   display: block;
@@ -455,6 +464,15 @@ body.modal-open {
 
 .auth-nav__item {
   margin-right: 50px;
+}
+@media screen and (min-width: 767px) {
+  .auth-nav__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .auth-nav__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .auth-nav__item:last-child {
   margin-right: 0;
@@ -595,33 +613,27 @@ body.modal-open {
     background-color: #2F303A;
     padding-top: 118px;
     padding-bottom: 118px;
-    text-align: center;
   }
 }
-@media (mi-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero {
-    margin: 0 auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #2F303A;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    text-align: center;
+    padding: 118px 204px;
+    max-width: 768px;
   }
 }
-@media (mi-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (mi-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero .hero {
-    margin: 0 auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header22x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #2F303A;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    text-align: center;
+    padding: 118px 204px;
   }
 }
 .hero__title {
@@ -991,7 +1003,7 @@ body.modal-open {
   padding-top: 0;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section-work {
     display: none;
   }
@@ -1031,6 +1043,7 @@ body.modal-open {
 
 .grup-image__text {
   position: absolute;
+  text-align: center;
   bottom: 27px;
   right: 50%;
   font-style: normal;
@@ -1126,8 +1139,8 @@ body.modal-open {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients {
@@ -1169,14 +1182,35 @@ body.modal-open {
 
 .button {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
+  margin-right: 0;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .button {
+    width: 326px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button {
+    justify-content: center;
+  }
 }
 
 .button__item {
-  margin-right: 8px;
+  margin-right: 7px;
   margin-bottom: 15px;
-  margin-right: 120px;
+}
+@media screen and (max-width: 767px) {
+  .button__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .button__item:last-child {
+    margin-right: 0;
+  }
+  .button__item:nth-last-child(3) {
+    margin-right: 0;
+  }
 }
 
 .button__buttons {
@@ -1206,24 +1240,47 @@ body.modal-open {
   border-radius: 4px;
 }
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 
 .card-set__item {
-  margin-bottom: 30px;
-  width: 370px;
-  height: 404px;
   position: relative;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 404px;
   background: #ffffff;
   border-top: 0;
 }
 .card-set__item:hover, .card-set__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card-set__item:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .card-set__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    margin-bottom: 0;
+    width: 354px;
+    width: calc((100% - 120px) / 2);
+    margin-right: 30px;
+  }
+  .card-set__item:first-child {
+    height: 400px;
+  }
+  .card-set__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .card-set__item:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
 }
 
 .product:hover .overlay {
@@ -1244,7 +1301,6 @@ body.modal-open {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
 }
-
 .product__titles {
   margin-bottom: 4px;
   font-weight: 700;
@@ -1276,6 +1332,8 @@ body.modal-open {
 .overlay__text {
   display: flex;
   position: absolute;
+  padding-left: 24px;
+  padding-right: 24px;
   top: 63px;
   right: 24px;
   font-style: normal;
@@ -1284,8 +1342,6 @@ body.modal-open {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  width: 322px;
-  height: 0;
 }
 
 .page-footter {
@@ -1296,6 +1352,16 @@ body.modal-open {
 
 .page-footter__grup {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page-footter__grup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
 }
 
 .logo-footter {
@@ -1313,11 +1379,15 @@ body.modal-open {
 .contacts {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-right: auto;
+  }
+}
 
 .address {
   font-style: normal;
 }
-
 .address__item {
   margin-bottom: 9px;
 }
@@ -1358,6 +1428,11 @@ body.modal-open {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .social-network-footer {
+    padding-top: 0;
+  }
 }
 
 .social-network-footer__title {
@@ -1411,6 +1486,11 @@ body.modal-open {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-form {
+    padding-top: 60px;
+  }
 }
 
 .footter-form__title {
