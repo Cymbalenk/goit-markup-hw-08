@@ -1,7 +1,12 @@
 
 .main-nav {
+  @media screen and (max-width:1199px) {
   display: flex;
   justify-content: space-between;
+}
+  @media screen and (min-width:1200px) {
+   display: flex;
+  align-items: center;
 
-  
+}
 }

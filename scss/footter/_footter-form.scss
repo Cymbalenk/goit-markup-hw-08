@@ -3,12 +3,17 @@
 
     margin-top: 0;
     margin-bottom: 0;
+ @media screen and (max-width:1199px) {
+   text-align: center;
+ }
  
 
-  
-  text-align: center;
   @media screen and (min-width:768px) {
     padding-top: 60px;
+}
+@media screen and (min-width:1200px) {
+  margin-left: 93px;
+  padding-top: 12px;
 }
   }
   .footter-form__title  {
@@ -23,6 +28,10 @@
     }
   .footer-form__opsion {
   display: block;
+
+  @media screen and (min-width:1200px) {
+    display: inline-flex;
+  }
   }
   .footer-form__email {
     width: 100%;
@@ -40,4 +49,9 @@
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    border-radius: 4px;
    background-color:$secondary-fount-color;
+
+   @media screen and (min-width:1200px) {
+   width: 358px;
+  }
+
   }

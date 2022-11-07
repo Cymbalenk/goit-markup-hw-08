@@ -1,14 +1,19 @@
 .section-titles {
     margin-top: 0;
-     margin-bottom: 50px;
-     
-     font-size: 36px;
-     line-height: 1.17;
+     margin-bottom: 30px;
+
+     font-size: 28px;
+    line-height: 38px;
+
      text-align: center;
      letter-spacing: 0.03em;
 
-@media screen and (width:480px) {
-    text-align: center;
+@media screen and (min-width:1200px) {
+  margin-bottom: 50px;
+
+ font-size: 36px;
+line-height: 1.17;
+
 }
 
       }

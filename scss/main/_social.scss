@@ -1,13 +1,22 @@
 .social {
   display: flex;
   justify-content: center;
-   
+
+  padding-left: 32px;
+  padding-right: 32px;
     padding-bottom: 30px;
     margin: 0;
   }
  
   .social__list {
 
+
+    
+      display: flex;
+justify-content: center;
+align-items: center;
+
+    
 
    width: 44px;
   height: 44px;

@@ -2,21 +2,28 @@
 
    
    @media screen and (min-width:768px) {
-      display: inline-flex;
-      align-items: center;
-   
-        
+      display: flex;
+      
+    
    margin-left: 88px;
-   margin-top: 2px;
+
    
+   }
+
+@media screen and (min-width:1200px) {
+display: flex;
+align-items: center;
+margin-left: 93px;
+
+
    }
 
 }
 .site-nav__link { 
-   display: block;
-   padding-top: 32px;
+   display:block;
+padding-top: 32px;
    padding-bottom: 32px;
-  
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -52,6 +59,9 @@
     border-radius: 2px;
  }
  
+   @media screen and (min-width:1200px) {  
+   
+   }
 }  
 .site-nav__item {
 margin-right: 50px;  

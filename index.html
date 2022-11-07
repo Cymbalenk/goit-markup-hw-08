@@ -28,7 +28,8 @@
       <div class="conteiner main-nav">
         <a href="./" class="logo list"
           >Web<span class="logo__name logo__name--black">Studio</span></a
-        ><div class="nav-grup">
+        >
+        <div class="nav-grup">
           <nav class="page-header__nav">
             <ul class="site-nav list">
               <li class="site-nav__item ">
@@ -50,8 +51,8 @@
               <a href="tel:+380961111111" class="auth-nav__link"><svg class="auth-nav__icon" width="10" height="16"><use href="./images/icon.svg/symbol-defs2.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
               </li> 
           </ul>
-        
         </div>
+      
        
        <button type="button"
         class="nav-button js-open-menu is-open" 
@@ -69,7 +70,7 @@
           </svg>
   </button>
 
-    <div class="mobile-conteiner js-menu-container is-open" id="mobile-conteiner"  >
+    <div class="mobile-conteiner js-menu-container" id="mobile-conteiner"  >
 
       <button type="button"
       class="mobile-conteiner__button js-close-menu " 
@@ -232,29 +233,51 @@
           <h2 class="section-titles">Чим ми займаємося</h2>
           <ul class="work list">
             <li class="work__item">
-             <div class="grup-image"><img
+             <div class="grup-image">
+              
+              
+              <img
+              srcset="
+              ./images\desktop_apps_img@1x.jpg 1x,
+               ./images\desktop_apps_img@2x.jpg 2x,
+                ./images\desktop_apps_img@3x.jpg 3x"
                 src="images/img.jpg"
                 alt="Людина працює за клавіатурою"
                 width="370"
-                height="294"
-              /><p class="grup-image__text">Декстопні додатки</p>
+           
+              />
+              
+              <p class="grup-image__text">Декстопні додатки</p>
             </div> 
             </li>
             <li class="work__item">
-              <div class="grup-image"><img
+              <div class="grup-image">
+                
+                <img
+                srcset="
+                ./images\mobile_apps_img@1x.jpg 1x,
+                 ./images\mobile_apps_img@2x.jpg 2x,
+                  ./images\mobile_apps_img@3x.jpg 3x"
                 src="images/img (1).jpg"
                 alt="Людина працює за ноутбуком"
                 width="370"
-                height="294"
+               
               /><p class="grup-image__text">Мобільні додатки</p></div>
             </li>
             <li class="work__item">
-              <div class="grup-image"><img
+              <div class="grup-image">
+                
+                <img
+                srcset="
+                ./images\designers_decisions_img@1x.jpg 1x,
+                 ./images\designers_decisions_img@2x.jpg 2x,
+                  ./images\designers_decisions_img@3x.jpg 3x"
                 src="images/img (2).jpg"
                 alt="Людина працює за планшетом"
                 width="370"
-                height="294"
-              /><p class="grup-image__text">Дизайнерські рішення</p></div>
+            
+              />
+              <p class="grup-image__text">Дизайнерські рішення</p></div>
             </li>
           </ul>
         </div>
@@ -267,13 +290,22 @@
         <div class="conteiner">
            <ul class="comands list">
             <li class="comands__item">
-   <img 
-      srcset="./images/igor.jpg 1x, ./images/igor2x.jpg 2x" 
+       
+     
       
-      src="./images/igor.jpg"
-      alt="Фото учасника Ігор"
-      width="270"
-              />
+
+   
+  <img class="image"
+srcset="
+./images/ihor_img@1x.jpg 1x,
+ ./images\ihor_img@2x.jpg 2x,
+  ./images\ihor_img@3x.jpg 3x"
+
+      src="./images/ihor_img@1x.jpg"
+      alt="Фото учасника Ігор"/>
+    
+      
+           
               <div class="comands__meta">
               <h3 class="comands__titles">Ігор Дем'яненко</h3>
               <p class="comands__text">Product Designer</p> 
@@ -303,12 +335,18 @@
                </ul>
             </li>
             <li class="comands__item">
-              <img srcset="./images/olga.jpg 1x, ./images/olga2x 2x"
+
+
+              <img  class="image"
+               srcset="
+               ./images/olha_img@1x.jpg 1x,
+                ./images\olha_img@2x.jpg 2x,
+                 ./images\olha_img@3x.jpg 3x"
               
-              src="images/olga.jpg"
+              src="./images/olha_img@1x.jpg"
               alt="Фото учатниці Ольга"
-              width="270"
-              height="260"
+       
+            
               />
               <div class="comands__meta">
               <h3 class="comands__titles">Ольга Рєпіна</h3>
@@ -338,12 +376,13 @@
                </ul>
             </li>
             <li class="comands__item">
-              <img
-              srcset="./images/nikolay.jpg 1x, ./images/nikolay2x 2x"
-                src="images/nikolay.jpg"
+              <img class="image"
+              srcset="./images/mykola_img@1x.jpg 1x, ./images\mykola_img@2x.jpg 2x, ./images\mykola_img@3x.jpg 3x"
+              
+                src="./images/mykola_img@1x.jpg"
                 alt="Фото учатника Микола"
-                width="270"
-                height="260"
+           
+              
               />
               <div class="comands__meta">
               <h3 class="comands__titles">Микола Тарасов</h3>
@@ -376,11 +415,14 @@
             </li>
             <li class="comands__item">
               <img
-              srcset="./images/mihail.jpg 1x, ./images/mihail2x 2x"
-                src="images/mihail.jpg"
+              srcset="
+              ./images\mykhailo_img@1x.jpg 1x,
+               ./images\mykhailo_img@2x.jpg 2x,
+                ./images\mykhailo_img@3x.jpg"
+                src="./images\mykhailo_img@1x.jpg"
                 alt="Фото учатина Михайло"
-                width="270"
-                height="260"
+      
+              
               />
               <div class="comands__meta">
               <h3 class="comands__titles">Михайло Єрмаков</h3>
