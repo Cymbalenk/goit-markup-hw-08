@@ -1335,6 +1335,12 @@ body.modal-open {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .clients {
   display: flex;
@@ -1398,7 +1404,7 @@ body.modal-open {
   width: 450px;
   height: 460px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .image {
     width: 354px;
     height: 374px;
@@ -1414,6 +1420,12 @@ body.modal-open {
 .section-partfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-partfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button {
