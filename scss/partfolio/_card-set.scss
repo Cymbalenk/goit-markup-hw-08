@@ -7,29 +7,13 @@
 }
      
 .card-set__item {
-  position: relative;
-width: 100%;
-
-@media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-    
-}
-@media screen and (min-width:768px) and (max-width:1199px) {
-   margin-right: 30px;
+ position: relative;
+width: auto;
+height: auto;
 margin-bottom: 30px;
-width: 354px;
-    
-&:nth-last-child(-n+2) {
-    margin-bottom: 0;
-}
-&:nth-child(2n) {
-    margin-right: 0;
-}
 
-}
-
-    background:$three-text-color;
-    border-top: 0;  
+background:$three-text-color;
+border-top: 0;  
     
 &:hover,
 &:focus {
@@ -42,13 +26,29 @@ width: 354px;
     margin-bottom: 0;
 
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
     margin-right: 30px;
-  margin-bottom: 30px;
+   
+   width: 354px;
+       
+   &:nth-last-child(-n+2) {
+       margin-bottom: 0;
+   }
+   &:nth-child(2n) {
+       margin-right: 0;
+   }
+   
+   }
+   
+
+@media screen and (min-width:1200px) {  
+    position: relative;
     width: 370px;
-    
-     position: relative;
-    
+   
+
+    margin-right: 30px;
+
+ 
     background:$three-text-color;
     
     border-top: 0;  
