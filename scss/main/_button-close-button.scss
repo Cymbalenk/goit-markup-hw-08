@@ -4,13 +4,13 @@
 position: absolute;
 display: flex;
 align-items: center;
-    
 
-  
  top:0;
  right: 0;
   
  margin: 8px;
+width: 30px;
+height: 30px;
 
   background:$three-text-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -21,6 +21,7 @@ align-items: center;
   transition-property:color ;
    transition-duration: 250ms;
    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+   
    
    &:hover {
    color:$accent-color;
