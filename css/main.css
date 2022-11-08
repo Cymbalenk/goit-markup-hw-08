@@ -1086,12 +1086,6 @@ body.modal-open {
     text-align: center;
   }
 }
-@media screen and (min-width: 1200px) {
-  .benefits__titles {
-    margin-right: 30px;
-  }
-}
-
 .benefits__item {
   margin-bottom: 30px;
 }
@@ -1117,6 +1111,8 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .benefits__item {
     margin-right: 30px;
+    margin-bottom: 0;
+    width: 270px;
   }
   .benefits__item:last-child {
     margin-right: 0;
