@@ -20,7 +20,7 @@ letter-spacing: 0.02em;
 }
 
 .navigation__list {
-    color: $primary-text-color;
+  color: $primary-text-color;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -31,6 +31,10 @@ letter-spacing: 0.02em;
   color:$accent-color;
 }
 
+}
+.navigation-list--active {
+  
+  color:$accent-color; 
 }
 .social-contact {
 display: flex;

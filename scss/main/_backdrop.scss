@@ -20,9 +20,14 @@ z-index: 1;
       padding:208px 159px;
     }
   }
-  /*.backdrop.is-hidden .modal {
-    transform: translate(-50% ,-50%) scale(0); } */
- 
+
+  @media screen and (min-width:1200px) {
+  .backdrop.is-hidden .modal {
+    transform: translate(-50% ,-50%) scale(0); 
+  }
+
+ }
+
   .backdrop.is-hidden {
    opacity: 0;
     pointer-events: none;
