@@ -9,12 +9,12 @@
   padding-bottom:60px;
 }
 .clients { 
-  @media screen and (min-width:480px) and (max-width:1199px) {
-     display: flex;
+
+    display: flex;
  flex-wrap: wrap;
  
  margin: -15px;
-  }
+ 
   @media screen and (min-width:1200px) {
   display:flex;
 
@@ -25,15 +25,13 @@
 }
 
 .clients__item {
-  @media screen and (min-width:480px) {
-  
 width:calc((100% - 4 * 15px) / 2) ;
-
- }
 margin: 15px;
+
+
 @media screen and (min-width:768px) {
   width: calc((100% - 6 * 15px) / 3);
-
+margin: 15px;
 }
 @media screen and (min-width:1200px) {
   margin: 0;

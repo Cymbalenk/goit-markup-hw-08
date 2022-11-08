@@ -625,7 +625,7 @@ body.modal-open {
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/header.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile_header_img@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -639,21 +639,26 @@ body.modal-open {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
+    max-width: 1600px;
     margin: 0 auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/header2img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile_header_img@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #2F303A;
     padding-top: 118px;
     padding-bottom: 118px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
   }
 }
 @media (min-width: 480px) {
   .hero {
     height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/header2x.jpg);
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet_hero_img@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -666,7 +671,8 @@ body.modal-open {
   .hero .hero {
     height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/header22x.jpg);
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet_hero_img@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -679,7 +685,7 @@ body.modal-open {
   .hero {
     height: 600px;
     margin: 0 auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/htader3.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop_hero_img@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -695,7 +701,7 @@ body.modal-open {
   .hero .hero {
     height: 600px;
     margin: 0 auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/header3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop_hero_img@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1298,12 +1304,10 @@ body.modal-open {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .clients {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 @media screen and (min-width: 1200px) {
   .clients {
@@ -1314,16 +1318,13 @@ body.modal-open {
 }
 
 .clients__item {
+  width: calc((100% - 60px) / 2);
   margin: 15px;
-}
-@media screen and (min-width: 480px) {
-  .clients__item {
-    width: calc((100% - 60px) / 2);
-  }
 }
 @media screen and (min-width: 768px) {
   .clients__item {
     width: calc((100% - 90px) / 3);
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1362,7 +1363,7 @@ body.modal-open {
 .image {
   width: 450px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .image {
     width: 354px;
   }
@@ -1470,13 +1471,13 @@ body.modal-open {
 
 .card-set__item {
   position: relative;
+  width: 100%;
   background: #ffffff;
   border-top: 0;
 }
 @media screen and (max-width: 767px) {
   .card-set__item {
     margin-bottom: 30px;
-    width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
