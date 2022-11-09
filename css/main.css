@@ -638,6 +638,7 @@ body.modal-open {
   height: 100%;
   padding: 48px 40px;
   z-index: 999;
+  overflow: scroll;
   background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1465,7 +1466,6 @@ body.modal-open {
 .button {
   display: flex;
   flex-flow: wrap;
-  margin-right: 139px;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 767px) {
