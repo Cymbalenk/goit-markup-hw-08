@@ -3,7 +3,9 @@
 @media screen and (min-width:768px) {
   
 }
-
+@media screen and (min-width:1200px) {
+ 
+}
     }
     .address__item {
       margin-bottom: 9px;
@@ -15,6 +17,10 @@
     }
     
      .address__list {
+      @media screen and (min-width:1200px) {
+display: flex;
+      }
+
     display: inline-block;
     font-size: 14px;
     line-height: 1.71;
