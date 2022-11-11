@@ -11,8 +11,12 @@
  
   padding-top: 118px;
   padding-bottom: 118px;
-  padding-left: 15px;
-  padding-right: 15px;
+
+
+margin: 0 auto;
+min-width: 480px;
+
+
   text-align: center;
 
   
@@ -31,8 +35,11 @@
        
        padding-top: 118px;
        padding-bottom: 118px;
-       padding-left: 15px;
-       padding-right: 15px;
+       
+
+       margin: 0 auto;
+
+      min-width: 480px;
        text-align: center;
 
        
@@ -44,7 +51,7 @@
 .hero { 
 height: 400px;
 margin: 0 auto;
-max-width: 768px;
+width:100%;
    background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
@@ -60,9 +67,9 @@ max-width: 768px;
 @media (min-resolution:2dppx) {
   .hero {
     height: 400px;
-    margin: 0 auto;
-
-   max-width: 768px;
+    
+margin: 0 auto;
+   width:100%;
 
      background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
