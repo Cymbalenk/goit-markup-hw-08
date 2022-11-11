@@ -1,3 +1,4 @@
+
 .hero {
   background-image: linear-gradient(to right,
    rgba(47, 48, 58, 0.4),
@@ -14,13 +15,11 @@
 
 
 margin: 0 auto;
-min-width: 480px;
-
 
   text-align: center;
 
   
-}
+
 @media (min-resolution: 2dppx) {
     .hero { 
   background-image: linear-gradient(to right,
@@ -39,12 +38,12 @@ min-width: 480px;
 
        margin: 0 auto;
 
-      min-width: 480px;
        text-align: center;
 
        
      
   }
+}
 }
 
 @media screen and (min-width:768px) and (max-width:1199px) {
@@ -67,7 +66,7 @@ width:100%;
 @media (min-resolution:2dppx) {
   .hero {
     height: 400px;
-    
+    width:;
 margin: 0 auto;
    width:100%;
 
