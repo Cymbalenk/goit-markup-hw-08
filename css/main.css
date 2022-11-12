@@ -527,13 +527,6 @@ body.modal-open {
   vertical-align: middle;
 }
 
-.menu-nav {
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  margin: 0px auto;
-}
-
 .navigation__item {
   margin-bottom: 32px;
   font-style: normal;
@@ -563,7 +556,7 @@ body.modal-open {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-contact__link {
+.social-contact {
   display: flex;
   margin-top: 64px;
   text-align: center;
@@ -584,7 +577,7 @@ body.modal-open {
 }
 
 .contact {
-  margin-top: 100%;
+  padding-top: 100%;
 }
 .contact__link {
   padding: 0;
