@@ -328,7 +328,7 @@ h2, h3, h4, h5, h6, p, ul, a {
   background-color: var(--three-text-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .main-nav {
     width: 480px;
     padding-top: 16px;
@@ -527,6 +527,13 @@ body.modal-open {
   vertical-align: middle;
 }
 
+.menu-nav {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
 .navigation__item {
   margin-bottom: 32px;
   font-style: normal;
@@ -556,9 +563,6 @@ body.modal-open {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-contact {
-  display: flex;
-}
 .social-contact__link {
   display: flex;
   margin-top: 64px;
@@ -573,14 +577,14 @@ body.modal-open {
   color: #2196f3;
 }
 .social-contact__line {
-  width: 22px;
+  height: 22px;
   margin: 10px;
   color: rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }
 
 .contact {
-  margin-top: 302px;
+  margin-top: 100%;
 }
 .contact__link {
   padding: 0;
@@ -622,6 +626,12 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .options {
     width: 1200px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .benefits {
+    width: 480px;
   }
 }
 
@@ -838,7 +848,7 @@ body.modal-open {
   position: relative;
   top: 93px;
   left: 0;
-  min-width: 450px;
+  height: 798px;
   width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1137,7 +1147,7 @@ body.modal-open {
   font-size: 14px;
   line-height: 1.14;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .benefits__titles {
     text-align: center;
   }

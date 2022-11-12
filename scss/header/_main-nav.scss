@@ -1,11 +1,11 @@
 
 .main-nav {
-@media screen and (max-width:767px) {
-  width: 480px;
-
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
+  @media screen and (min-width:480px) and (max-width:767px) {
+    width: 480px;
+  
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
 @media screen and (min-width:768px) {
   width: 768px;

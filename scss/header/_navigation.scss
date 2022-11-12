@@ -1,8 +1,20 @@
+.menu-nav {
+display:flex;
+align-items: stretch;
+flex-direction:column;
 
+margin: 0px auto;
+
+
+
+
+
+
+}
 .navigation {
- 
+
 &__item {
-margin-bottom: 32px;
+  margin-bottom: 32px;
 
  font-style: normal;
 font-weight: 500;
@@ -43,10 +55,11 @@ letter-spacing: 0.02em;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .social-contact {
-display: flex;
 
 &__link {
-display: flex;
+
+display:flex;
+
 
 margin-top: 64px;
 text-align: center;
@@ -65,7 +78,7 @@ letter-spacing: 0.02em;
 }
 
 &__line {
-width: 22px;
+height:  22px;
 margin: 10px;
 
 color: rgba(33, 33, 33, 0.2);
@@ -74,7 +87,9 @@ transform: rotate(90deg);
 }
 }
 .contact {
-margin-top:302px ;
+
+margin-top: 100%;
+
 
 &__link {
  padding: 0;
