@@ -17,6 +17,8 @@
 }
   }
   .footter-form__title  {
+
+
     margin-top: 0;
     margin-bottom: 20px;
     
@@ -25,7 +27,14 @@
     
      text-transform: uppercase;
      color:$three-text-color; 
+
+
+     @media screen and (min-width:1200px) {
+      display: flex;
+     }
     }
+
+
   .footer-form__opsion {
   display: block;
 
