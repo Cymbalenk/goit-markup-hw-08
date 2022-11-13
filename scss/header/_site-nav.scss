@@ -10,6 +10,7 @@
 @media screen and (min-width:1200px) {
 display: flex;
 align-items: center;
+
 margin-left: 93px;
 
 
@@ -17,13 +18,14 @@ margin-left: 93px;
 
 }
 .site-nav__link { 
+
    display:block;
 padding-top: 32px;
    padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+   line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: $primary-text-color;
@@ -31,7 +33,7 @@ padding-top: 32px;
 transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   
  &:hover,
  &:focus {

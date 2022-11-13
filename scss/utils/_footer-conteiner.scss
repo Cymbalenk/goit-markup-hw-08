@@ -1,0 +1,33 @@
+.footer-conteiner {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        
+          width: 480px;
+          text-align: center;
+       margin: 0px auto;
+       padding-left: 15px;
+       padding-right: 15px;
+        
+      }
+      @media screen and (min-width: 768px) {
+        
+          width: 768px;
+        text-align: center;
+        margin: 0px auto;
+        padding-left: 15px;
+        padding-right: 15px;
+         
+      }
+      @media screen and (max-width: 1199px) {
+        
+        
+          align-items: center;
+        
+      }
+      @media screen and (min-width: 1200px) {
+    
+          display: flex;
+          align-items: center;
+          width: 1200px;
+        
+      }
+}

@@ -1,12 +1,10 @@
 .auth-nav {
    margin-left: auto;
-   
-    color:tomato;
 
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         padding-top: 21px;
-       
+       padding-bottom: 21px;
  
      }
      @media screen and (min-width:1200px) {
@@ -22,8 +20,8 @@
     display: block; 
     
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+      font-size: 12px;
+      line-height: 1.16;
     letter-spacing: 0.02em;
     
     color:$secondary-text-color;
@@ -31,7 +29,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+
+    @media screen and (min-width:1200px) {
+      font-size: 14px;
+      line-height: 1.14;
+   
+  }
+ 
     &:hover,
     &:focus {
         color:$accent-color;

@@ -1,9 +1,14 @@
 .menu-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-
-
+  height: 100%;
 }
 .navigation {
+  @media screen and (min-width:480px) {
+
+  }
 
 &__item {
   margin-bottom: 32px;
@@ -73,7 +78,7 @@ transform: rotate(90deg);
 
 }
 .contact {
-padding-top:100%;
+
 
 &__link {
  padding: 0;
